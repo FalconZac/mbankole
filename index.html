@@ -1,93 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Mobolaji Bankole</title>
+<html>
+<head>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+	<title>Mobolaji Bankole</title>
+    <!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+</head>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body style="background-color:#646464;background-image:url(images/ApplesMech-bg.jpg);padding-top:80px;padding-bottom:70px">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Navigation</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse" style="padding-top:5px">
-			<ul class="nav nav-pills">
-				<li role="presentation" class="active"><a href="#">Home</a></li>
-				<li role="presentation"><a href="projects.html">Projects</a></li>
-				<li role="presentation"><a href="#">Bio</a></li>
+<body style="background-image:url(images/bg.png)">
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+	<!-- START -->
+	<nav class="green darken-3" role="navigation">
+		<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Mobolaji Bankole</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">About</a></li>
 			</ul>
-		</div>
-      </div>
-	</nav>
-	<div class="jumbotron" style="background-color:rgba(0, 0, 0, 0.6)">
-		<div class="container-fluid" style="color:#EEEEEE">
-			<h1>Very Much Under Construction</h1>
-			<h4 style="color:#BBBBBB">The Website of Bolaji Bankole</p>
-		</div>
-	</div>
-	<div class="container-fluid">
-	<div class="row">
-		<div class="col-sm-10 col-md-4">
-			<div class="thumbnail" style="background-color:rgba(0, 0, 0, 0.4);border-color:rgba(0, 0, 0, 0.4)">
-				<img src="images/ImageError.png" alt="...">
-				<div class="caption" style="color:#EEEEEE">
-					<h2 class="text-center">Thumbnail label</h3>
-					<p style="color:#BBBBBB">Descriptions of various things will go here at some point.</p>
-					<p><a href="#" class="btn btn-default btn-block btn-lg" role="button">Button</a></p>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-10 col-md-4">
-			<div class="thumbnail" style="background-color:rgba(0, 0, 0, 0.4);border-color:rgba(0, 0, 0, 0.4)">
-				<img src="images/ImageError.png" alt="...">
-				<div class="caption" style="color:#EEEEEE">
-					<h2 class="text-center">Thumbnail label</h3>
-					<p style="color:#BBBBBB">Really they may or may not end up being worth reading.</p>
-					<p><a href="#" class="btn btn-default btn-block btn-lg" role="button">Button</a></p>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-10 col-md-4">
-			<div class="thumbnail" style="background-color:rgba(0, 0, 0, 0.4);border-color:rgba(0, 0, 0, 0.4)">
-				<img src="images/ImageError.png" alt="...">
-				<div class="caption" style="color:#EEEEEE">
-					<h2 class="text-center">Thumbnail label</h3>
-					<p style="color:#BBBBBB">Who really knows. It's a matter of personal opinion.</p>
-					<p style="color:#BBBBBB">Ha, as if. They definitely won't be, and obviously aren't right now.</p>
-					<p><a href="#" class="btn btn-default btn-block btn-lg" role="button">Button</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-	</div>
-	<nav class="navbar navbar-inverse navbar-bottom">
-		<div class="container" style="color:Grey">
-			<h5 class="text-center" style="padding-top:5px">Created by Bolaji Bankole - 2015</h5>
-			<h6 class="text-center" style="padding-top:5px">Some Rights Reserved</h6>
+
+			<ul id="nav-mobile" class="side-nav">
+				<li><a href="#"><i class="mdi-action-home"></i>Home</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#"><i class="mdi-action-assignment-ind"></i>About</a></li>
+			</ul>
+		<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 		</div>
 	</nav>
 	
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+	<div class="container">
+		<div class="card-panel green">
+			<span class="white-text">I am a very simple card. I am good at containing small bits of information.
+			I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+			</span>
+        </div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m4">
+				<div class="card large">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="images/curiosity.jpg">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">Projects<i class="mdi-navigation-more-vert right"></i></span>
+						<p><a href="#">Things I've Done</a></p>
+					</div>
+					<div class="card-reveal">
+						<span class="card-title grey-text text-darken-4">Projects<i class="mdi-navigation-close right"></i></span>
+						<p>Here is some more information about this product that is only revealed once clicked on.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m4">
+				<div class="card large">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="images/Vega.jpg">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">Card Title <i class="mdi-navigation-more-vert right"></i></span>
+						<p><a href="#">This is a link</a></p>
+					</div>
+					<div class="card-reveal">
+						<span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+						<p>Here is some more information about this product that is only revealed once clicked on.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m4">
+				<div class="card large">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="images/curiosity.jpg">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">Card Title <i class="mdi-navigation-more-vert right"></i></span>
+						<p><a href="#">This is a link</a></p>
+					</div>
+					<div class="card-reveal">
+						<span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+						<p>Here is some more information about this product that is only revealed once clicked on.</p>
+					</div>
+				</div>
+			</div>
+		 </div>
+	</div>
+	<footer class="page-footer green darken-3">
+        <div class="container">
+			<h5 class="center-align" style="color:white">Footer Content</h5>
+			<p class="center-align" style="color:white">You can use rows and columns here to organize your footer content.</p>
+        </div>
+	</footer>
+	<!-- JAVASCRIPT -->
+	<script>
+	$(".button-collapse").sideNav();
+	</script>
+</body>
+
 </html>
