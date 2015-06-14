@@ -20,22 +20,51 @@
 			<a id="logo-container" href="#" class="brand-logo" style="fontsize:5"></a>
 			<!--normal-->
 			<ul class="right hide-on-med-and-down">
-				<li><a href="#">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="#">Projects</a></li>
 				<li class="active"><a href="#">Gallery</a></li>
 				<li><a href="#">About</a></li>
 			</ul>
 			<!--Small/Mobile-->
 			<ul id="nav-mobile" class="side-nav">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Projects</a></li>
-				<li class="active"><a href="#">Gallery</a></li>
-				<li><a href="#">About</a></li>
+				<li><a href="index.html"><i class="mdi-action-home small left"></i>Home</a></li>
+				<li><a href="#"><i class="mdi-action-group-work small left"></i>Projects</a></li>
+				<li class="active"><a href="#"><i class="mdi-image-collections small left"></i>Gallery</a></li>
+				<li><a href="#"><i class="mdi-social-person small left"></i>About</a></li>
 			</ul>
 		<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 		</div>
 	</nav>
-
+	<div class="container">
+		<div class="card-panel blue-grey">
+			<h1 class="white-text center-align" style="padding-top:0px">Mobolaji Bankole</h1>
+			<span class="white-text">This page needs a lot more work
+			</span>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col m12 l4">
+			<div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href='#'>This is a link</a>
+            </div>
+          </div>
+		</div>
+		<div class="col m12 l8">
+			<div class="card">
+				<div class="card-image">
+					<img class="materialboxed" data-caption="Caption Here" width="650" src="images/vega.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
 	
 	<footer class="page-footer blue-grey darken-2">
         <div class="container">
@@ -49,6 +78,9 @@
 	$(document).ready(function(){
       $('.parallax').parallax();
     });
+	$(document).ready(function(){
+    $('.materialboxed').materialbox();
+	});
 	</script>
 </body>
 
