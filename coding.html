@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/rocketscript">
+		var host = "mbankole.com";
+		if ((host == window.location.host) && (window.location.protocol != "https:"))
+			window.location.protocol = "https";
+	</script>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+	<title>Mobolaji Bankole</title>
+    <!--Mobile Stuff-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta name="theme-color" content="#263238">
+</head>
+
+<body style="background-image:url(images/bg.png)">
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+	<!-- START -->
+	<div class="navbar-fixed">
+		<nav class="blue-grey darken-3" style="color:rgba(69, 90, 100,.4)" role="navigation">
+			<!--<a href="#!" class="brand-logo center"><i class="mdi-alert-warning left"></i>Heavy Construction</a>-->
+			<div class="nav-wrapper container">
+				<a id="logo-container" href="#" class="brand-logo" style="fontsize:5"></a>
+				<!--normal-->
+				<ul class="right hide-on-med-and-down">
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="#">Projects</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+				<!--Small/Mobile-->
+				<ul id="nav-mobile" class="side-nav">
+					<li><a href="index.html"><i class="mdi-action-home small left"></i>Home</a></li>
+					<li class="active"><a href="#"><i class="mdi-action-group-work small left"></i>Projects</a></li>
+					<li><a href="gallery.html"><i class="mdi-image-collections small left"></i>Gallery</a></li>
+					<li><a href="about.html"><i class="mdi-social-person small left"></i>About</a></li>
+				</ul>
+			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+			</div>
+		</nav>
+	</div>
+
+	<div class="parallax-container">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="container">
+			<h1 class="white-text center-align" style="font-size:130px"><b>CODING</b></h1>
+		</div>
+		<div class="parallax">
+			<img src="images/code.jpg">
+		</div>
+	</div>
+	<br>
+		<!--<video poster="images/ImageError.png" autoplay loop muted>
+			<source src="vid.ogv" type='video/ogg; codecs="theora, vorbis"'>
+			<source src="vid.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+			Your browser does not support the video tag.
+		</video>-->
+	<div class="row">
+		<div class="col s12 m7">
+			<div class="card blue-grey darken-2">
+				<div class="card-content white-text">
+					<h2 class="header center">Coding</h2>
+					<div class="card-action">
+						<p class="flow-text">Some time ago, I decided that I would start programming seriously with mircrocontrollers, and so I set out on a journey to minimize the number of burned components and maximize the blinking LEDs.</p>
+					</div>
+				</div>
+			</div>
+        </div>
+		<div class="col s12 m5">
+			<ul class="collection">
+				<li class="collection-item avatar">
+					<img src="images/TeensyThumbSquare.jpg" alt="" class="circle">
+						<span class="title">Teensy 3.1 (Arduino)</span>
+						<p>More advanced arduino<br><A HREF="#teensy">Goto</A></p>
+				</li>
+				<li class="collection-item avatar">
+					<img src="images/MetroMiniThumbSquare.jpg" alt="" class="circle">
+						<span class="title">Metro Mini (Arduino)</span>
+						<p>My first arduino board<br><A HREF="#metromini">Goto</A></p>
+				</li>
+				<li class="collection-item avatar">
+					<img src="images/Picaxe2ThumbSquare.jpg" alt="" class="circle">
+						<span class="title">Picaxe 20M2</span>
+						<p>My introduction to semi-serious microcontroller programming<br><A HREF="#picaxe">Goto</A></p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<A NAME="teensy"></A>
+	<br>
+	<div class="row">
+		<div class="col s12 m5">
+			<div class="card blue-grey">
+				<div class="card-content white-text">
+					<h3 class="header center">Teensy 3.1</h3>
+					<div class="card-action">
+						<p class="flow-text">I decided to get a Teensy after I accidentally killed the Metro Mini. <br>It is a huge step up in processing power, RAM and flash memory, and I/O.<br>So far, I have mostly been using it to drive an LCD but it has a lot of other capabilities.<br><br>More info on it can be found <A HREF="http://pjrc.com/teensy/index.html">here</A></p>
+					</div>
+				</div>
+			</div>
+        </div>
+		<div class="col s12 m7">
+			<div class="card">
+				<div class="card-image">
+					<img src="projects/Overview.jpg">
+				</div>
+				<div class="card-content">
+					<p>An overview of my current setup.</p>
+				</div>
+			</div>
+        </div>
+	</div>
+	<A NAME="metromini"></A>
+	<br>
+	<div class="row">
+		<div class="col s12 m5">
+			<div class="card blue-grey">
+				<div class="card-content white-text">
+					<h3 class="header center">Metro Mini</h3>
+					<div class="card-action">
+						<p class="flow-text">The Metro Mini is essentially an Arduino Uno in a breadboardable formfactor. It afforded me more RAM and program storage than the picaxe, as well as some basic c++ skills, but sadly it died unexpectedly.<br><br>More info on it can be found <A HREF="http://www.adafruit.com/products/2590">here</A></p>
+					</div>
+				</div>
+			</div>
+        </div>
+		<div class="col s12 m7">
+			<div class="card">
+				<div class="card-image">
+					<img src="projects/MetroMini.jpg">
+				</div>
+			</div>
+        </div>		
+	</div>
+	<A NAME="picaxe"></A>
+	<br>
+	<div class="row">
+		<div class="col s12 m5">
+			<div class="card blue-grey">
+				<div class="card-content white-text">
+					<h3 class="header center">Picaxe 20M2</h3>
+					<div class="card-action">
+						<p class="flow-text">For my first microcontroller, I wanted to start very simple. The Picaxe is a chip that comes with a custom bootloader, similar to arduinos, that allows it to run code written in BASIC.<br>While it is a bit limited, it was a good learning experience.<br><br>More info on it can be found <A HREF="http://www.picaxe.com/">here</A></p>
+					</div>
+				</div>
+			</div>
+        </div>
+		<div class="col s12 m7">
+			<div class="card">
+				<div class="card-image">
+					<img src="projects/ServoControl.jpg">
+				</div>
+				<div class="card-content">
+					<p>Servo testing using the picaxe.</p>
+				</div>
+			</div>
+        </div>		
+	</div>
+
+	<footer class="page-footer blue-grey darken-3">
+        <div class="container">
+			<h6 class="center-align" style="color:white;font-size:20px">Bolaji Bankole - 2015</h6>
+			<h6 class="center-align" style="color:white;font-size:14px">Created Using <a href="http://materializecss.com/" style="color:#CCCCCC">Materialize</a></h6>
+        </div>
+	</footer>
+	<!-- JAVASCRIPT -->
+	<script>
+	$(".button-collapse").sideNav();
+	$(document).ready(function(){
+      $('.parallax').parallax();
+    });
+	</script>
+</body>
+
+</html>
