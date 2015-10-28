@@ -70,9 +70,9 @@
 		<div class="col s12 m7">
 			<div class="card blue-grey darken-2">
 				<div class="card-content white-text">
-					<h2 class="header center">Coding</h2>
+					<h2 class="header center" style="line-height:01">Coding</h2>
 					<div class="card-action">
-						<p class="flow-text">Some time ago, I decided that I would start programming seriously with mircrocontrollers, and so I set out on a journey to minimize the number of burned components and maximize the blinking LEDs.</p>
+						<p class="flow-text">This is a sampling of some of the less bad code that I've managed to make. </p>
 					</div>
 				</div>
 			</div>
@@ -80,90 +80,97 @@
 		<div class="col s12 m5">
 			<ul class="collection">
 				<li class="collection-item avatar">
-					<img src="images/TeensyThumbSquare.jpg" alt="" class="circle">
-						<span class="title">Teensy 3.1 (Arduino)</span>
-						<p>More advanced arduino<br><A HREF="#teensy">Goto</A></p>
+					<h4 class="title" style="font-size:20;line-height:0">C++</h4>
+					<p>Independant Study<br><A HREF="#c++">Goto</A></p>
 				</li>
 				<li class="collection-item avatar">
-					<img src="images/MetroMiniThumbSquare.jpg" alt="" class="circle">
-						<span class="title">Metro Mini (Arduino)</span>
-						<p>My first arduino board<br><A HREF="#metromini">Goto</A></p>
+					<h4 class="title" style="font-size:20;line-height:0">Java</h4>
+					<p>Learning in class<br><A HREF="#java">Goto</A></p>
 				</li>
 				<li class="collection-item avatar">
-					<img src="images/Picaxe2ThumbSquare.jpg" alt="" class="circle">
-						<span class="title">Picaxe 20M2</span>
-						<p>My introduction to semi-serious microcontroller programming<br><A HREF="#picaxe">Goto</A></p>
+					<h4 class="title" style="font-size:20;line-height:0">Python</h4>
+					<p>For fun every once in a while<br><A HREF="#python">Goto</A></p>
 				</li>
 			</ul>
 		</div>
 	</div>
-	<A NAME="teensy"></A>
 	<br>
+	<A NAME="c++"></A>
+	<div class = "row">
+		<div class="col s12" style="line-height:0">
+			<h2> C++ </h2>
+		</div>
+	</div>
 	<div class="row">
-		<div class="col s12 m5">
-			<div class="card blue-grey">
-				<div class="card-content white-text">
-					<h3 class="header center">Teensy 3.1</h3>
-					<div class="card-action">
-						<p class="flow-text">I decided to get a Teensy after I accidentally killed the Metro Mini. <br>It is a huge step up in processing power, RAM and flash memory, and I/O.<br>So far, I have mostly been using it to drive an LCD but it has a lot of other capabilities.<br><br>More info on it can be found <A HREF="http://pjrc.com/teensy/index.html">here</A></p>
-					</div>
-				</div>
-			</div>
-        </div>
+		<div class="col s12">
+             <br>
+				<pre><code class="language-c++">
+				void addToArrayOfArrays(ArrayOfArrays& array, SmartArray newElement)
+{
+	if (!array.size)
+	{
+		array.capacity = 1;
+		try {
+			array.array = new SmartArray[array.capacity];
+		}
+		catch (std::bad_alloc e) {
+			std::cout << "Failed to create new array";
+			std::cout << e.what();
+		}
+		catch (...) {
+			std::cout << "General Failure";
+		}
+	}
+	else if (array.size == array.capacity)
+	{
+		array.capacity *= 2;
+		SmartArray* newArray = nullptr;
+		try {
+			newArray = new SmartArray[array.capacity];
+		}
+		catch (std::bad_alloc e) {
+			std::cout << "Failed to create new array";
+			std::cout << e.what();
+		}
+		catch (...) {
+			std::cout << "General Failure";
+		}
+		for (int i = 0; i < array.size; ++i)
+		{
+			newArray[i] = cloneArray(array.array[i]);
+			destroyArray(array.array[i]);
+		}
+		delete[] array.array;
+		array.array = newArray;
+	}
+	array.array[array.size] = cloneArray(newElement);
+	++array.size;
+}
+				</code></pre>
+            <br>
+          </div>
 		<div class="col s12 m7">
-			<div class="card">
-				<div class="card-image">
-					<img src="projects/Overview.jpg">
-				</div>
-				<div class="card-content">
-					<p>An overview of my current setup.</p>
-				</div>
-			</div>
+			
         </div>
 	</div>
-	<A NAME="metromini"></A>
+	<A NAME="java"></A>
 	<br>
 	<div class="row">
 		<div class="col s12 m5">
-			<div class="card blue-grey">
-				<div class="card-content white-text">
-					<h3 class="header center">Metro Mini</h3>
-					<div class="card-action">
-						<p class="flow-text">The Metro Mini is essentially an Arduino Uno in a breadboardable formfactor. It afforded me more RAM and program storage than the picaxe, as well as some basic c++ skills, but sadly it died unexpectedly.<br><br>More info on it can be found <A HREF="http://www.adafruit.com/products/2590">here</A></p>
-					</div>
-				</div>
-			</div>
+
         </div>
 		<div class="col s12 m7">
-			<div class="card">
-				<div class="card-image">
-					<img src="projects/MetroMini.jpg">
-				</div>
-			</div>
+
         </div>		
 	</div>
-	<A NAME="picaxe"></A>
+	<A NAME="python"></A>
 	<br>
 	<div class="row">
 		<div class="col s12 m5">
-			<div class="card blue-grey">
-				<div class="card-content white-text">
-					<h3 class="header center">Picaxe 20M2</h3>
-					<div class="card-action">
-						<p class="flow-text">For my first microcontroller, I wanted to start very simple. The Picaxe is a chip that comes with a custom bootloader, similar to arduinos, that allows it to run code written in BASIC.<br>While it is a bit limited, it was a good learning experience.<br><br>More info on it can be found <A HREF="http://www.picaxe.com/">here</A></p>
-					</div>
-				</div>
-			</div>
+			
         </div>
 		<div class="col s12 m7">
-			<div class="card">
-				<div class="card-image">
-					<img src="projects/ServoControl.jpg">
-				</div>
-				<div class="card-content">
-					<p>Servo testing using the picaxe.</p>
-				</div>
-			</div>
+			
         </div>		
 	</div>
 
