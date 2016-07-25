@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>About - Mobolaji Bankole</title>
+        
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+        <link rel="stylesheet" href="css/keyframes.css">
+        <link rel="stylesheet" href="css/transitions.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="theme-color" content="#b0bec5">
+	</head>
+	
+	<body bgcolor="#FFFFFF" text="#000000" background="images/bg.png">
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.js"></script>
+        
+        <header>
+            <ul id="nav-mobile" class="side-nav fixed grey lighten-5">
+            <h1 class="center-align" style="font-size:2.4em; margin-top: 20px; color:555555">Mobolaji Bankole</h1>
+                <div class="card left-align blue-grey lighten-4">
+                    <li><a href="index.html" style="font-size:130%">Home</a></li>
+                    <li><a href="#"  style="font-size:130%">About</a></li>
+                    <li><a href="#" style="font-size:130%">Projects</a></li>
+                    <li><a href="#" style="font-size:130%">Gallery</a></li>
+                </div>
+                <div class="center-align" style="color:grey">
+                    <h6>Mobolaji Bankole</h6>
+                    <h6>2016</h6>
+                </div>
+            </ul>
+        </header>
+        
+        <div class="m-scene" id="main">
+            <div class="card" style="margin-top:0px">
+                <div class="section no-pad-bot grey lighten-5" id="index-banner">
+                    <div class="container">
+                        <div class="container">
+                            <a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only"><i class="black-text material-icons">menu</i></a>
+                        </div>
+                            <h1 class="header center" style="font-size:190%; margin:0px; color:888888">About</h1>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row m-page scene_element scene_element--fadeinup">
+                <div class="col s12 m12 l8 offset-l3">
+                    <div class="card grey lighten-5">
+                        <div class="card-content">
+                            <h3 class="center">About</h3>
+                        </div>
+                        <div class="card-action">
+                            <p>As you've probably already gathered, my name is Mobolaji Bankole. I'm a first year engineering student at Carnegie Mellon University, and a lot of my interests lean towards the more technical side of things. I've tried my hand at things like arduinos and linux servers, pretty much al the standard tech exploration activities.</p>
+                            <p>Email: *@mbankole.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+        
+        <script>
+            $(document).ready(function()
+            {
+                $('.parallax').parallax();
+                $('.button-collapse').sideNav(
+                {
+                    menuWidth: 300,
+                    edge: 'left',
+                    closeOnClick: false
+                }
+                );
+            }
+            );
+        </script>
+	</body>
+</html>

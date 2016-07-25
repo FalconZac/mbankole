@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/rocketscript">
+		var host = "mbankole.com";
+		if ((host == window.location.host) && (window.location.protocol != "https:"))
+			window.location.protocol = "https";
+	</script>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+	<title>About - Mobolaji Bankole</title>
+    <!--Mobile Stuff-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta name="theme-color" content="#263238">
+</head>
+
+<body style="background-image:url(images/bg.png)">
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+	<!-- START -->
+	<div class="navbar-fixed">
+		<nav class="blue-grey darken-3" style="color:rgba(69, 90, 100,.4)" role="navigation">
+			<!--<a href="#!" class="brand-logo center"><i class="mdi-alert-warning left"></i>Heavy Construction</a>-->
+			<div class="nav-wrapper container">
+				<a id="logo-container" href="#" class="brand-logo" style="fontsize:5"></a>
+				<!--normal-->
+				<ul class="right hide-on-med-and-down">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li class="active"><a href="#">About</a></li>
+				</ul>
+				<!--Small/Mobile-->
+				<ul id="nav-mobile" class="side-nav">
+					<li><a href="index.html"><i class="mdi-action-home small left"></i>Home</a></li>
+					<li><a href="projects.html"><i class="mdi-action-group-work small left"></i>Projects</a></li>
+					<li><a href="gallery.html"><i class="mdi-image-collections small left"></i>Gallery</a></li>
+					<li class="active"><a href="#"><i class="mdi-social-person small left"></i>About</a></li>
+				</ul>
+			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+			</div>
+		</nav>
+	</div>
+
+	<div class="parallax-container">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="container">
+			<h1 class="white-text center-align" style="font-size:8em"><b>ABOUT</b></h1>
+		</div>
+		<div class="parallax">
+			<img src="images/Desk.JPG">
+		</div>
+	</div>
+	<br>
+
+
+
+	<footer class="page-footer blue-grey darken-3">
+        <div class="container">
+			<h6 class="center-align" style="color:white;font-size:1em">Bolaji Bankole - 2015</h6>
+			<h6 class="center-align" style="color:white;font-size:.7em">Created Using <a href="http://materializecss.com/" style="color:#CCCCCC">Materialize</a></h6>
+        </div>
+	</footer>
+	<!-- JAVASCRIPT -->
+	<script>
+	$(".button-collapse").sideNav();
+	$(document).ready(function(){
+      $('.parallax').parallax();
+    });
+	</script>
+</body>
+
+</html>

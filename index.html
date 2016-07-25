@@ -1,143 +1,113 @@
-<!DOCTYPE html>
 <html>
-    
-<head>
-	<script type="text/rocketscript">
-		var host = "mbankole.com";
-		if ((host == window.location.host) && (window.location.protocol != "https:"))
-			window.location.protocol = "https";
-	</script>
-	<link href='https://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
-    <!--This site is by no means an example of good html-->
-	<!-- __  __       _           _       _ _   ____              _         _      -->
-	<!--|  \/  |     | |         | |     (_|_) |  _ \            | |       | |     -->
-	<!--| \  / | ___ | |__   ___ | | __ _ _ _  | |_) | __ _ _ __ | | _____ | | ___ -->
-	<!--| |\/| |/ _ \| '_ \ / _ \| |/ _` | | | |  _ < / _` | '_ \| |/ / _ \| |/ _ \-->
-	<!--| |  | | (_) | |_) | (_) | | (_| | | | | |_) | (_| | | | |   < (_) | |  __/-->
-	<!--|_|  |_|\___/|_.__/ \___/|_|\__,_| |_| |____/ \__,_|_| |_|_|\_\___/|_|\___|-->
-	<!--                                _/ |                                       -->
-	<!--                               |__/                                        -->
-	<!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-	<title>Mobolaji Bankole</title>
-    <!--Mobile Stuff-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-	<meta name="theme-color" content="#263238">
-</head>
-
-<body style="background-image:url(images/bg.png)">
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.js"></script>
-	<!-- START -->
-	<div class="navbar-fixed">
-		<nav class="blue-grey darken-4" role="navigation">
-			<!--<a href="#!" class="brand-logo center"><i class="mdi-alert-warning left"></i>Heavy Construction</a>-->
-			<div class="nav-wrapper container">
-				<a id="logo-container" href="#" class="brand-logo" style="fontsize:5"></a>
-				<!--normal-->
-				<ul class="right hide-on-med-and-down">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="projects.html">Projects</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="about.html">About</a></li>
-				</ul>
-				<!--Small/Mobile-->
-				<ul id="nav-mobile" class="side-nav">
-					<li class="active"><a href="#"><i class="mdi-action-home small left"></i>Home</a></li>
-					<li><a href="projects.html"><i class="mdi-action-group-work small left"></i>Projects</a></li>
-					<li><a href="gallery.html"><i class="mdi-image-collections small left"></i>Gallery</a></li>
-					<li><a href="about.html"><i class="mdi-social-person small left"></i>About</a></li>
-				</ul>
-			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-			</div>
-		</nav>
-	</div>
-	<div background-color="ffffff">
-        <div class="parallax-container">
-            <h1 class="white-text center-align hide-on-med-and-down" style="font-size:8em; line-height:1em; padding-top:1.25em; padding-bottom:1.25em"><b>MOBOLAJI BANKOLE</b></h1>
-            <h1 class="white-text center-align hide-on-large-and-up" style="font-size:5em; line-height:1em; padding-top:1.25em"><b>MOBOLAJI BANKOLE</b></h1>
-            <div class="parallax">
-                <img src="images/fieldBackground.JPG">
-            </div>
-        </div>
-    </div>
-    
+	<head>
+		<title>Home - Mobolaji Bankole</title>
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/w3.css">
+		<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="theme-color" content="#90a4ae">
+	</head>
 	
-    
-    <div class="card blue-grey darken-1" style="margin-top:20px; margin-left:0px; margin-right:0px; margin-bottom:0px">
-        <div class="card-content white-text">
-            <div class="row" style="margin-top:0px; margin-left:0px; margin-right:0px; margin-bottom:0px">
-                <div class="col s12 m12 l4">
-                    <div class="card medium">
-                        <div class="card-image">
-                            <img src="images/DarkLightStripThumb.jpg">
-                        </div>
-                        <div class="card-content">
-                            <div class="row">
-                                <div class="col s12 m12 l8">
-                                    <h1 class="card-title grey-text text-darken-3 center-align" style="font-size:3.2em; line-height:.0em">Projects</h1>
-                                </div>
-                                <div class="col s12 m12 l4">
-                                    <a class="waves-effect waves-light btn-large blue-grey lighten-1" href="projects.html">Goto</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+	<body background="images/bg.png">
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.js"></script>
+        
+        <header>
+            <ul id="nav-mobile" class="side-nav fixed grey lighten-5">
+            <h1 class="center-align" style="font-size:2.4em; margin-top: 20px; color:555555">Mobolaji Bankole</h1>
+                <div class="card left-align blue-grey lighten-4">
+                    <li><a href="index.html" style="font-size:130%" class="transition">Home</a></li>
+                    <li><a href="about.html"  style="font-size:130%" class="transition">About</a></li>
+                    <li><a href="projects" style="font-size:130%" class="transition">Projects</a></li>
+                    <li><a href="gallery.html" style="font-size:130%" class="transition">Gallery</a></li>
                 </div>
-
-                <div class="col s12 m12 l4">
-                    <div class="card medium">
-                        <div class="card-image">
-                            <img src="images/ImageError.png">
-                        </div>
-                        <div class="card-content">
-                            <div class="row">
-                                <div class="col s12 m12 l8">
-                                    <h1 class="card-title grey-text text-darken-3 center-align" style="font-size:3.2em; line-height:.0em">Pictures</h1>
-                                </div>
-                                <div class="col s12 m12 l4">
-                                    <a class="waves-effect waves-light btn-large blue-grey lighten-1" href="#">Goto</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="center-align" style="color:grey">
+                    <h6>Mobolaji Bankole</h6>
+                    <h6>2016</h6>
                 </div>
-
-                <div class="col s12 m12 l4">
-                    <div class="card medium">
-                        <div class="card-image">
-                            <img src="images/render7thumb.jpg">
+            </ul>
+        </header>
+        
+        <main>
+            <div class="card" style="margin-top:0px">
+                <div class="section no-pad-bot grey lighten-5" id="index-banner">
+                    <div class="container">
+                        <div class="container">
+                            <a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only"><i class="black-text material-icons">menu</i></a>
                         </div>
-                        <div class="card-content">
-                            <div class="row">
-                                <div class="col s12 m12 l8">
-                                    <h1 class="card-title grey-text text-darken-3 center-align" style="font-size:3.2em; line-height:.0em">Renders</h1>
-                                </div>
-                                <div class="col s12 m12 l4">
-                                    <a class="waves-effect waves-light btn-large blue-grey lighten-1" href="gallery.html">Goto</a>
-                                </div>
-                            </div>
-                        </div>
+                            <h1 class="header center" style="font-size:190%; margin:0px; color:888888">Home</h1>
+                        <br>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <br>
-    <br>
-    
-	<footer class="page-footer blue-grey darken-4">   
-        <h6 class="center-align" style="color:white; font-size:1.2em; padding-bottom:0.8em">Bolaji Bankole - 2016</h6> 
-	</footer>
-    
-	<!-- JAVASCRIPT -->
-	<script>
-        $(".button-collapse").sideNav();
-        $(document).ready(function(){
-          $('.parallax').parallax();
-        });
-	</script>
-</body>
-    
+            
+            <div id="main" class="w3-animate-opacity">
+                <div class="parallax-container">
+                    <div class="row">
+                        <div class="col s12 m12 l2 offset-l10">
+                            <h1 class="right white-text" style="padding:5px">About</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                    	<div class="col s12 m12 l2 offset-l10">
+                            <a class="waves-effect waves-light btn-large blue-grey lighten-2 right transition" href="about.html"  style="font-size:130%" class="transition">Goto</a>
+                        </div>
+                    </div>
+                    <div class="parallax"><img src="images/OverviewThumb.jpg"></div>
+                </div>
+
+                <br>
+
+                <div class="parallax-container">
+                    <div class="row">
+                        <div class="col s12 m12 l2 offset-l10">
+                            <h1 class="right white-text" style="padding:5px">Projects</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m12 l2 offset-l10">
+                            <a class="waves-effect waves-light btn-large blue-grey lighten-2 right transition" href="projects.html" style="font-size:130%">Goto</a>
+                        </div>
+                    </div>
+                    <div class="parallax"><img src="images/DarkLightStripThumb.jpg"></div>
+                </div>
+
+                <br>
+
+                <div class="parallax-container">
+                    <div class="row">
+                        <div class="col s12 m12 l2 offset-l10">
+                            <h1 class="right white-text" style="padding:5px">Gallery</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m12 l2 offset-l10">
+                            <a class="waves-effect waves-light btn-large blue-grey lighten-2 right transition" href="gallery.html" style="font-size:130%">Goto</a>
+                        </div>
+                    </div>
+                    <div class="parallax"><img src="images/render7thumb.jpg"></div>
+                </div>
+            </div>
+            
+            <br>
+
+        </main>
+        
+        <script>
+            $(document).ready(function(){
+                $('.parallax').parallax();
+                $('.button-collapse').sideNav();                
+                $('a.transition').click(function() {
+                    event.preventDefault();
+                    newLocation = this.href;
+                    $('#main').fadeOut(150, newpage);
+                });
+
+                function newpage() {
+                    window.location = newLocation;
+                }
+            });
+        </script>
+	</body>
 </html>
