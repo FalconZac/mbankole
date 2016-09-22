@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 	<head>
 		<title>Projects - Mobolaji Bankole</title>
 		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -42,15 +42,99 @@
                 </div>
             </div>
             
-            <div id="main" class="w3-animate-opacity">
+            <div id="main" class="w3-animate-bottom">
                 <div class="row">
                     <div class="col s12 m12 l8 offset-l3">
-                        <div class="card grey lighten-5">
-                            <div class="card-content">
-                                <h3 class="center">Projects</h3>
+                        <div class="row">
+                            <div class="col s12 m12 l6">
+                                <div class="card grey lighten-5">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="images/CaveGame.jpg">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">Cave Game<i class="material-icons right">more_vert</i></span>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Cave Game<i class="material-icons right">close</i></span>
+                                        <p class="flow-text">Making use of the Teensy's multiple ADCs.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-action">
-                                <p>From time to time, I do things. But there's nothing to see here right now.</p>
+                            <div class="col s12 m12 l6">
+                                <div class="card grey lighten-5">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <video class="activator" height="352" autoplay loop>
+                                            <source src="projects/vid.mp4" type="video/mp4">
+                                            <source src="projects/vid.ogv" type="video/ogg">
+                                            <img class="activator" src="images/GOL.JPG">
+                                        </video>
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">Conway's Game of Life<i class="material-icons right">more_vert</i></span>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Conway's Game of Life<i class="material-icons right">close</i></span>
+                                        <p class="flow-text">I replaced the dead Metro Mini with a Teensy 3.1. I programmed Conway's Game of Life to explore the possibilties of the much faster core and larger RAM. Immediately upon finishing, I learned that it was included in the LCD library. Practice never hurts though.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 m12 l6">
+                                <div class="card grey lighten-5">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="images/MetroMini.jpg">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">Metro Mini<i class="material-icons right">more_vert</i></span>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Metro Mini<i class="material-icons right">close</i></span>
+                                        <p class="flow-text">A very short lived, but valued component. As my first arduino experience, I learned a lot from it, but killed it in the end.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m12 l6">
+                                <div class="card grey lighten-5">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="images/LightStrip.jpg">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">LED Strip<i class="material-icons right">more_vert</i></span>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">LED Strip<i class="material-icons right">close</i></span>
+                                        <p class="flow-text">Using the Picaxe 20M2, I made an interface of two buttons and a potentiometer that controls the speed and direction that the LEDs pulse.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m12 l6">
+                                <div class="card grey lighten-5">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="images/LEDTest.jpg">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">LED Test<i class="material-icons right">more_vert</i></span>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">LED Test<i class="material-icons right">close</i></span>
+                                        <p class="flow-text">Built the circuit to program and test a Picaxe 20M2. You have to start somewhere.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m12 l6">
+                                <div class="card grey lighten-5">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="images/555Circuit.jpg">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">555 Timer<i class="material-icons right">more_vert</i></span>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">555 Timer<i class="material-icons right">close</i></span>
+                                        <p class="flow-text">Simple flashing LEDs using a 555 timer and the associated components. Uses a NOT gate, so the LEDs alternate.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -75,6 +159,15 @@
                     window.location = newLocation;
                 }
             });
+        </script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-83601581-1', 'auto');
+            ga('send', 'pageview');
         </script>
 	</body>
 </html>
